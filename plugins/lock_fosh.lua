@@ -1,42 +1,53 @@
-local function run(msg, matches)
-    if is_momod(msg) then
-        return
-    end
-    local data = load_data(_config.moderation.data)
-    if data[tostring(msg.to.id)] then
-        if data[tostring(msg.to.id)]['settings'] then
-            if data[tostring(msg.to.id)]['settings']['fosh'] then
-                lock_fosh = data[tostring(msg.to.id)]['settings']['fosh']
-            end
-        end
-    end
-    local chat = get_receiver(msg)
-    local user = "user#id"..msg.from.id
-    if lock_fosh == "yes" then
-       delete_msg(msg.id, ok_cb, true)
-    end
+local function run(msg)
+
+   
+
+    local data = load_data(_config.moderation.data)
+
+   
+
+     if data[tostring(msg.to.id)]['settings']['antifosh'] == 'yes' then
+
+     
+
+   
+
+if not is_momod(msg) then
+
+   
+
+   
+
+chat_del_user('chat#id'..msg.to.id, 'user#id'..msg.from.id, ok_cb, true)
+
+    local msgads = 'ForbiddenAdText'
+
+   local receiver = msg.to.id
+
+    send_large_msg('chat#id'..receiver, msg.."\n", ok_cb, false)
+
+      end
+
+   end
+
 end
- 
+
+   
+
 return {
-  patterns = {
-    "(ک*س)$",
-    "کیر",
-	"کص",
-	"کــــــــــیر",
-	"کــــــــــــــــــــــــــــــیر",
-	"کـیـــــــــــــــــــــــــــــــــــــــــــــــــــر",
-    "ک×یر",
-	"ک÷یر",
-	"ک*ص",
-	"کــــــــــیرر",
-    "kir",
-	"kos",
-	"گوساله",
-	"gosale",
-	"gusale",
-  },
-  run = run
+patterns = {
+
+"کیر(.*)",
+"کیر",
+"ننه(.*)",
+"کسخل(.*)",
+"کصخل(.*)",
+"کص(.*)",
+"کس(.*)",
+"گاییدم(.*)",
+"جنده(.*)",
+"نگایید(.*)",
+
+},
+ run = run
 }
-
-
-

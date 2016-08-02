@@ -261,8 +261,8 @@ end
 	if matches[1] == 'reload' then
 		receiver = get_receiver(msg)
 		reload_plugins(true)
-		post_msg(receiver, "Reloaded!", ok_cb, false)
-		return "Reloaded!"
+		post_msg(receiver, "انجام شد!", ok_cb, false)
+		return ""
 	end
 	--[[*For Debug*
 	if matches[1] == "vardumpmsg" and is_admin1(msg) then
@@ -329,4 +329,6 @@ return {
   run = run,
   pre_process = pre_process
 }
-
+--By @imandaneshi :)
+--https://github.com/SEEDTEAM/TeleSeed/blob/test/plugins/admin.lua
+---Modified by @Rondoozle for supergroups
