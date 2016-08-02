@@ -211,7 +211,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "admin",
+       "admin",
     "onservice",
     "inrealm",
     "ingroup",
@@ -222,48 +222,102 @@ function create_config( )
     "owners",
     "arabic_lock",
     "set",
+    "pl",
     "get",
     "broadcast",
     "invite",
     "all",
     "leave_ban",
-    "supergroup",
     "whitelist",
     "msg_checks",
-    "plugins",
-    "addplugin",
-    "filter",
-    "linkpv",
-    "lock_emoji",
-    "lock_english",
-    "lock_fosh",
-    "lock_fwd",
-    "lock_join",
-    "lock_media",
-    "lock_operator",
+    "help",
+    "savepl",
+    "sendpl",
+    "en_super",
+    "voise-space",
+    "version",
+    "txt2gif",
+    "aparat1",
+    "auto_leave",
+    "wiki",
+    "warn",
+    "trs",
+    "time",
+    "text2sticker",
+    "sticker-maker",
+    "sh",
+    "set_type",
+    "serverinfo",
+    "weather",
+    "send",
+    "off",
+    "news",
+    "music",
+    "me",
+    "map",
     "lock_username",
     "lock_tag",
     "lock_reply",
-    "rmsg",
-    "send",
-    "set_type",
-    "welcome",
-    "sh",
-    "serverinfo"
+    "kickme",
+    "lock_operator",
+    "azan",
+    "calc",
+    "lock_media",
+    "lock_join",
+    "lock_fwd",
+    "lock_fosh",
+    "lock_english",
+    "lock_emoji",
+    "linkpv",
+    "google-search",
+    "addplugin",
+    "clash",
+    "echo",
+    "filter",
+    "fun",
+    "GPS",
+    "instagram",
+    "tophoto",
+    "tosticker",
+    "plist",
+    "lock_bots",
+    "arz",
+    "2st",
+    "cpu",
+    "aparat",
+    "spam",
+    "sethelp",
+    "info1",
+    "tex",
+    "ping1",
+    "expire",
+    "active",
+    "info",
+    "mypic",
+    "type",
+    "rmplug",
+    "restart",
+    "nerkh",
+    "wal",
+    "lock_video",
+    "lock_audio",
+    "supergp",
+    "open",
+    "SpPs",
+    "plugins",
+    "supergroup",
+    "suppoer"
     },
-    sudo_users = {80182995},--Sudo users
+    sudo_users = {238546978},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[MeGa shield v2.9
 An advanced administration bot based on TG-CLI written in Lua
 
 Github:
-https://github.com/hafez16/mega-shield
+https://github.com/abbas81/MGATG
 
-Admins:
-@hafez1116hafez [Developer]
-@amirho3ien911 [Developer]
-@Eblis_alone [Manager]
-@Mmd_hei [sponsor]
+Admin:
+@N_E_T
 
 Special thanks to
 SEEDTEAM
@@ -272,7 +326,7 @@ Magic team
 Avira team
 
 Our channels
-@shieldTM [persian]
+@MGA_TG_TEAM [persian]
 ]],
     help_text_realm = [[
 Realm Commands:
